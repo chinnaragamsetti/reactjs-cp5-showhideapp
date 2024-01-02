@@ -1,11 +1,10 @@
 /* Write your CSS here */
 .maincontainer {
-  background-image: linear-gradient(#fa7257, #fc63a7, #dd1264);
+  background-image: linear-gradient(to right, #fa7257, #fc63a7, #dd1264);
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
+  justify-content: center;
   align-items: center;
 }
 
@@ -16,26 +15,40 @@
 }
 .subcontainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+
+  width: 30%;
+  justify-content: space-around;
 }
 .eachcontainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding: 10px;
+  margin-right: 10px;
+
   align-items: center;
+
+  width: 40%;
 }
+
 .button {
   color: #dd1264;
   background-color: #ffffff;
   font-size: 10px;
   padding: 5px;
-  border: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
 }
 .para {
   font-size: 20px;
   color: #000000;
   padding: 10px;
   border: 3px;
+  background-color: #fddddb;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
 }
