@@ -9,25 +9,27 @@ class ShowHide extends Component {
   onFirstname = () => {
     this.setState(prevState => ({firstname: !prevState.firstname}))
   }
+
   onLastname = () => {
     this.setState(prevState => ({lastname: !prevState.lastname}))
   }
+
   render() {
     const {firstname, lastname} = this.state
 
     return (
       <div className="maincontainer">
         <h1 className="heading">Show/Hide</h1>
-        <div className="subcontaienr">
+        <div className="subcontainer">
           <div className="eachcontainer">
-            <button className="button" onClick={this.onFirstname}>
+            <button className="button" type="button" onClick={this.onFirstname}>
               Show/Hide Firstname
             </button>
             {firstname && <p className="para">Joe</p>}
           </div>
 
           <div className="eachcontainer">
-            <button className="button" onClick={this.onLastname}>
+            <button className="button" type="button" onClick={this.onLastname}>
               Show/Hide Lastname
             </button>
             {lastname && <p className="para">Jonas</p>}
