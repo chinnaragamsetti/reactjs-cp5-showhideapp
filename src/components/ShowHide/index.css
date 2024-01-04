@@ -16,8 +16,7 @@
 .subcontainer {
   display: flex;
 
-  width: 30%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .eachcontainer {
   display: flex;
